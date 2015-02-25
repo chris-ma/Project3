@@ -1,0 +1,16 @@
+<h2>Campaigns</h2>
+
+<button class="create-management">Create Campaign</button>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  {{#each managements}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{description}}</td>
+  </tr> 
+  {{/each}}
+</table>

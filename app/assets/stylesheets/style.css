@@ -1,0 +1,225 @@
+/*Global*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+* { box-sizing: border-box; }    
+
+body, html { 
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-area{
+  padding: 15px;
+  float: left;
+}
+
+
+/*landing page*/
+
+.middle-logo{
+  margin: 15% 35%;
+}
+.get-started{
+  margin: 44% ;
+  text-decoration: none;
+
+}
+
+#body-container{
+  width: 100%;
+  background-color:white;
+  background-image: radial-gradient(lightgrey 2%, transparent 1%),
+  radial-gradient(lightgrey 2%, transparent 1%);
+  background-size:50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+/*landing page ends*/
+
+/*Page Layout*/
+.content-area{
+  padding: 10px;
+  float: left;
+}
+
+/*Navigation*/
+
+
+nav{
+  float: left;
+  left: 0;
+  min-height: 100vh;
+  bottom: 0;
+  height: 100%;
+  width: 150px;
+  background-color: #444;
+  position: block fixed absolute;
+  text-align: center;
+}
+
+
+#nav-logo{
+  color: #EAEAEA;
+  padding: 10px;
+  display: fixed;
+  bottom: 0;
+  vertical-align: middle;
+  position: block;
+  text-align: center;
+}
+
+#nav-profile{
+  bottom: 0;
+  color: white;
+  width: 150px;
+  background-color: #444;
+  padding: 10px;
+  position: relative; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  padding: 10px;
+}
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  background-color: #2098d1;
+  color: white;
+  padding: 10px;
+}
+
+.nav-item:active {
+  background-color: #2098d1;
+  color: white;
+  padding: 10px;
+  z-index: 5;
+}
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+
+/*Mailer*/
+.message-area{
+  float: left;
+  position: relative;
+}
+.note-editable{
+height: 50vh;
+width:80vw;
+
+}
+/*interface*/
+
+
+
+.app-content, .app-form {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.app-form { display: none; }
+
+
+
+ul {
+  padding: 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  float: right;
+  padding: 0 5px;
+}
+
+.logo {
+  float: left;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}

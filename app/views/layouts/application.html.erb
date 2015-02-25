@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campaign</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <nav>
+        <div id="nav-logo"> 
+          <%= image_tag src="logo.png", class: "hvr-pop"  %>
+          <p>DATAHOLIC</p>
+        </div>
+        <div class="nav-item">
+        <a href="/campaigns"><%= image_tag src="add-campaign.png", class: "hvr-pop" %></a>        
+          
+          CAMPAIGN
+        </div>
+        <div class="nav-item">
+          <%= image_tag src="email.png", class: "hvr-pop"  %>
+          MAILING
+        </div>
+        <div class="nav-item">
+          <%= image_tag src="survey.png", class: "hvr-pop" %>
+          SURVEY
+        </div>
+        <div class="nav-item">
+          <%= image_tag src="statistical.png", class: "hvr-pop"  %>
+          ANALYSIS
+        </div>
+        <div id="nav-profile">
+          
+        </div>
+    </nav>
+    <div>
+      <%= yield %>
+    </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
+</body>
+</html>
